@@ -19,6 +19,6 @@ Amazon Amazon Web Services (AWS)
 
 ✔Launching instance of Wordpress server and MySql database
 
-Thank you Vimal Daga Sir for giving such a use case to work on👏
+
 
 🎫Writeup: https://tinyurl.com/y7hsgebj
