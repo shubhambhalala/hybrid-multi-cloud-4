@@ -94,7 +94,7 @@ resource "aws_nat_gateway" "natgw" {
 	}
 	depends_on	= [aws_internet_gateway.igw]
 }
-#To create routing table for mysql subnet
+#To create routing table for NAT Gateway
 resource "aws_route_table" "rtmysql" {
 	vpc_id	= "${aws_vpc.wpmysqlvpc.id}"
 	route {
@@ -102,7 +102,7 @@ resource "aws_route_table" "rtmysql" {
 		nat_gateway_id	= "${aws_nat_gateway.natgw.id}"
 	}
 	tags = {
-		Name = "routetablemysql"
+		Name = "routetablenatgw"
 	}
 }
 #To associate it with subnet
